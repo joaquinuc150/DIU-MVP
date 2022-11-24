@@ -1,10 +1,9 @@
 import React from 'react'
-
 import NavBar from '../components/nav_bar'
 import Profiles from  '../components/profiles.jsx'
 import History from '../components/history.jsx'
 import Exams from '../components/exams.jsx'
-
+import SocialMedia from '../components/socialmedia.jsx'
 export const HomePage = () => {
   return (
     <div className='page'>
@@ -14,6 +13,7 @@ export const HomePage = () => {
        <Profiles/>
       <History />
       <Exams />
+      <SocialMedia />
     </div>
   )
 }
