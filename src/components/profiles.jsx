@@ -13,32 +13,35 @@ import Avatar from '@mui/material/Avatar';
 import Link from '@mui/material/Link';
 import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
 
-export const Profiles = () => {
+export const Profiles = ({name, family, edad, email, tel, image}) => {
   const theme = useTheme();
 
   return (
-    <Card sx={{ display: 'flex' }}>
-      <Box sx={{ bgcolor: '#cfe8fc', height: '220px', width: '220px' }}>
-        <Avatar sx={{height: '220px', width: 'auto', fontsize: 22 }}>FG</Avatar>
+    <Card sx={{ display: 'flex', margin: 'auto', width: '50%' }}>
+      <Box sx={{ bgcolor: '#cfe8fc', height: '190px', width: '190px' }}>
+        <Avatar src={image} sx={{height: '190px', width: 'auto', fontSize: 28 }}>FG</Avatar>
       </Box>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Typography component="div" variant="h6">
-            Freddy Garcia
+            {name}
           </Typography>
           <Typography component="div" variant="p">
-           59 años
+           {family}
           </Typography>
           <Typography component="div" variant="p">
-          <Link href="#">freddy.garcia@gmail.com</Link>
+           {edad} años
+          </Typography>
+          <Typography component="div" variant="p" sx={{ marginTop: '10px'}}>
+          <Link href="#">{email}</Link>
           <IconButton color="primary" aria-label="upload picture" component="label">
             <input hidden accept="image/*" type="file" />
             <ModeEditOutlineIcon />
           </IconButton>
           </Typography>
           <Typography component="div" variant="p">
-          <Link href="#">+569 1234 5678</Link>
-          <IconButton aria-label="upload picture" component="label">
+          <Link href="#">{tel}</Link>
+          <IconButton color="primary" aria-label="upload picture" component="label">
             <input hidden accept="image/*" type="file" />
             <ModeEditOutlineIcon />
           </IconButton>

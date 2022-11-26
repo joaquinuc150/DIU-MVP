@@ -9,8 +9,8 @@ export const HomePage = () => {
     <div className='page'>
       <h1 className='page__title'>Mi Clínica</h1>
       <NavBar />
-      <h2>Página de Inicio</h2>
-       <Profiles/>
+      <h2>Perfil</h2>
+       <Profiles name="Freddy Garcia" family="" edad="59" email="freddy.garcia@gmail.com" tel="+569 1234 5678" />
       <History />
       <Exams />
       <SocialMedia />
