@@ -3,40 +3,39 @@ import { NavLink } from 'react-router-dom'
 import EventIcon from '@mui/icons-material/Event';
 import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
 
 
 export const NavBar = () => {
   return (
-    <nav className='nav-bar'>
+    <nav className='nav-bar' style={{backgroundColor: '#2196F3'}}>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-        to='/'
+        to='/hours' style={{color: '#E3F2FD', textDecoration: 'none'}}
       >
         <EventIcon />
         Reserva de hora
       </NavLink>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-        to='/grupofamiliar'
+        to='/group' style={{color: '#E3F2FD', textDecoration: 'none'}}
       >
         <FamilyRestroomIcon />
         Grupo familiar
       </NavLink>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-        to='/perfil'
+        to='/' style={{color: '#E3F2FD', textDecoration: 'none'}}
       >
         <AccountCircleIcon />
         Perfil
       </NavLink>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-        to='/home'
+        
       >
-      <Button variant="text" color = "error">Cerrar Sesión</Button>
+      <Button style={{color: '#E3F2FD',textTransform: 'none'}} >Cerrar Sesión</Button>
       
     </NavLink> 
     </nav>

@@ -1,7 +1,5 @@
 import React from 'react';
-import { styled } from '@mui/material/styles';
-import { Box, Grid, Typography, Button }from '@mui/material';
-import { green } from '@mui/material/colors';
+import { Grid, Typography, Button }from '@mui/material';
 const RowHistory = (name, date, hour) => {
     return (
         <Grid container>
@@ -35,8 +33,8 @@ export const History = () => {
                 {RowHistory("Toma PCR", "22/01/2022", "11:00")}
                 {RowHistory("Hora traumatologo", "14/04/2022", "14:30")}
             </Grid>
-            <Grid item sx={{float: 'right'}} xs={12}>
-                <Button sx={{textTransform: 'none', float: 'right'}} variant="contained" href="#contained-buttons">
+            <Grid item sx={{float: 'right'}} xs={9}>
+                <Button sx={{textTransform: 'none', float: 'right'}} variant="contained" href="/history">
                     Ver más
                 </Button>
             </Grid> 

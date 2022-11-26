@@ -3,12 +3,8 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-//import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
 import Avatar from '@mui/material/Avatar';
 import Link from '@mui/material/Link';
 import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
@@ -17,9 +13,9 @@ export const Profiles = ({name, family, edad, email, tel, image}) => {
   const theme = useTheme();
 
   return (
-    <Card sx={{ display: 'flex', margin: 'auto', width: '50%' }}>
-      <Box sx={{ bgcolor: '#cfe8fc', height: '190px', width: '190px' }}>
-        <Avatar src={image} sx={{height: '190px', width: 'auto', fontSize: 28 }}>FG</Avatar>
+    <Card sx={{ display: 'flex', margin: 'auto', width: '50%', padding: '20pt'}}>
+      <Box sx={{height: '200px', width: '200px', display: 'flex', padding:'5px'}}>
+        <Avatar src={image} sx={{bgcolor: '#1565C0', height: '190px', width: '190px'}}></Avatar>
       </Box>
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
