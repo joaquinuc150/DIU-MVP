@@ -6,11 +6,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export const SocialMedia = () =>{
     return(
-        <div>
-            <FacebookRoundedIcon  color = 'primary'  fontSize="large">
+        <div className='socialmedia'>
+            <FacebookRoundedIcon className='socialmedia__icons' color = 'primary'  fontSize="large">
         </FacebookRoundedIcon>
-        <TwitterIcon color='primary' fontSize='large'></TwitterIcon>
-        <InstagramIcon color='primary' fontSize='large'></InstagramIcon>
+        <TwitterIcon className='socialmedia__icons' color='primary' fontSize='large'></TwitterIcon>
+        <InstagramIcon className='socialmedia__icons' color='primary' fontSize='large'></InstagramIcon>
         </div>
         
         );
