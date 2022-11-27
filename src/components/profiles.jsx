@@ -31,14 +31,14 @@ export const Profiles = ({name, family, edad, email, tel, image}) => {
           <Typography component="div" variant="p" sx={{ marginTop: '10px'}}>
           <Link href="#">{email}</Link>
           <IconButton color="primary" aria-label="upload picture" component="label">
-            <input hidden accept="image/*" type="file" />
+            <input hidden type="email"/>
             <ModeEditOutlineIcon />
           </IconButton>
           </Typography>
           <Typography component="div" variant="p">
           <Link href="#">{tel}</Link>
-          <IconButton color="primary" aria-label="upload picture" component="label">
-            <input hidden accept="image/*" type="file" />
+          <IconButton color="primary" component="label">
+            <input hidden type="tel"/>
             <ModeEditOutlineIcon />
           </IconButton>
           </Typography>
