@@ -14,10 +14,12 @@ export const HomePage = () => {
       </div>
       <div className='page'>
         <h2>Perfil</h2>
-        <Profiles name="Freddy Garcia" family="" edad="59" email="freddy.garcia@gmail.com" tel="+569 1234 5678" image="https://www.pngkey.com/png/detail/202-2024792_user-profile-icon-png-download-fa-user-circle.png"/>
+        <Profiles name="Freddy García" family="" edad="59" email="freddy.garcia@gmail.com" tel="+569 1234 5678" image="https://www.pngkey.com/png/detail/202-2024792_user-profile-icon-png-download-fa-user-circle.png"/>
+        <div className='page__body'>
         <History />
         <Exams />
         <SocialMedia />
+        </div>
       </div>
     </div>
   )

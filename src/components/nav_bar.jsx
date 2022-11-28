@@ -6,8 +6,6 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
 import Button from '@mui/material/Button';
 
-
-
 export const NavBar = () => {
   return (
     <nav className='nav-bar' style={{ display: 'flex', backgroundColor: '#2196F3'}}>

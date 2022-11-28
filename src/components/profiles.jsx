@@ -73,22 +73,4 @@ export const Profiles = ({name, family, edad, email, tel, image}) => {
   );
 }
 
-
-
-/*
-
-
-export const Profiles = () => {
-  return (
-    <React.Fragment>
-    <CssBaseline />
-    <Container maxWidth="sm">
-      <Box sx={{ bgcolor: '#cfe8fc', height: '25vh' }} />
-      <Stack direction="row" spacing={2}>
-      <Avatar sx={{ bgcolor: deepOrange[500], position:"absolute", display:"flex" }}>FG</Avatar>
-    </Stack>
-    </Container>
-  </React.Fragment>
-)};
-*/
 export default Profiles
