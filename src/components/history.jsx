@@ -3,7 +3,7 @@ import { Grid, Typography, Button }from '@mui/material';
 
 const RowHistory = (name, date, hour) => {
     return (
-        <Grid container>
+        <Grid container className='grid__2'>
             <Grid item xs={4}>
                 <Typography variant="h6" gutterBottom>
                     {name}
@@ -34,13 +34,13 @@ export const History = () => {
                 {RowHistory("Toma PCR", "22/01/2022", "11:00")}
                 {RowHistory("Hora traumatologo", "14/04/2022", "14:30")}
             </Grid>
-            <Grid item sx={{float: 'right'}} xs={9}>
-                <Button sx={{textTransform: 'none', float: 'right'}} variant="contained" href="/history">
+            <Grid item sx={{float: 'right'}} xs={11}>
+                <Button sx={{textTransform: 'none', float: 'right'}} variant="contained" href="/history/1">
                     Ver más
                 </Button>
             </Grid> 
         </Grid>
-          );
+    );
         
 };
 

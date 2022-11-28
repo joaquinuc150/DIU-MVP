@@ -11,7 +11,7 @@ const AppRouter = () => {
         <Route path='/' element={<HomePage />} />
         <Route path='/group' element={<GroupPage />} />
         <Route path='/hours' element={<HomePage />} />
-        <Route path='/history' element={<HistoryPage />} />
+        <Route path='/history/1' element={<HistoryPage />} />
       </Routes>
     </BrowserRouter>
   )
