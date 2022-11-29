@@ -1,6 +1,7 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import { Box, Button, Grid, Typography }from '@mui/material';
+import Data from '../assets/data.pdf'
 
 const RowExams = (name, date) => {
     return (
@@ -16,7 +17,7 @@ const RowExams = (name, date) => {
                 </Typography>
             </Grid>
             <Grid item xs={4}>
-                <Button sx={{textTransform: 'none', bgcolor: '#BBDEFB', color: '#0D47A1', '&:hover': {bgcolor: '#1976D2', color: '#E3F2FD'}}} variant="contained" href="#contained-buttons">
+                <Button sx={{textTransform: 'none', bgcolor: '#BBDEFB', color: '#0D47A1', '&:hover': {bgcolor: '#1976D2', color: '#E3F2FD'}}} variant="contained" href = {Data} target = "_blank">
                     Ver
                 </Button>
             </Grid>
@@ -31,8 +32,8 @@ export const Exams = () => {
                 <Typography variant="h4" gutterBottom>
                     Resultados de exámenes
                 </Typography>
-                {RowExams("Radiografia dental", "17/05/2022")}
-                {RowExams("Toma de sangre", "17/05/2022")}
+                {RowExams("Toma de sangre", "17/11/2022")}
+                {RowExams("Toma de PCR", "12/11/2022")}
                 {RowExams("Radiografia Dental", "17/05/2022")}
             </Grid>
             <Grid item sx={{float: 'right'}} xs={11}>

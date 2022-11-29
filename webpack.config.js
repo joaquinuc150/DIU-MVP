@@ -37,7 +37,7 @@ module.exports = (_, argv) => ({
           : ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|pdf)$/i,
         use: [
           {
             loader: 'file-loader'

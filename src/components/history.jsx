@@ -17,7 +17,7 @@ const RowHistory = (name, date, hour) => {
             <Grid item xs={4}>
                 <Typography variant="h6" gutterBottom>
                     {hour}
-                </Typography>              
+                </Typography>           
             </Grid>
         </Grid>
     );
@@ -32,7 +32,7 @@ export const History = () => {
                 </Typography>
                 {RowHistory("Hora traumatologo", "14/04/2022", "14:30")}
                 {RowHistory("Toma PCR", "22/01/2022", "11:00")}
-                {RowHistory("Hora traumatologo", "14/04/2022", "14:30")}
+                {RowHistory("Procedimiento ambulatorio", "11/01/2020", "09:00")}
             </Grid>
             <Grid item sx={{float: 'right'}} xs={11}>
                 <Button sx={{textTransform: 'none', float: 'right'}} variant="contained" href="/history/1">
